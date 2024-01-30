@@ -32,8 +32,8 @@ Creamos en el “documentroot” del sitio web por defecto
 <body>  
     <?php echo "<h1>Actividad 1.3.1: LAMP Sever. Autor: Tu nombre y apellidos</h1>"; ?>     
 </body>  
-</html> )
-Desde el navegador e incluimos la siguiente URL:
+</html> )  
+Desde el navegador e incluimos la siguiente URL:  
 http://ip_servidor/info.php  
 ![image](https://github.com/cristian1203/Actividad13_lamp/assets/151034282/9375a8aa-89dc-47fb-8cd9-822ddd42dee7)
 
