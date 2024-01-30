@@ -10,6 +10,7 @@ apt install php libapache2-mod-php php-mysql -y
 ![image](https://github.com/cristian1203/Actividad13_lamp/assets/151034282/e3ea6d15-e908-4f4b-872d-7f97321152cb)
 ## 4.Editamos sitio web por defecto (000-default.conf) en la ruta  /etc/apache2:
 El sitio web (host virtual) quedaría de la siguiente manera:  
+ ```
 <VirtualHost *:80>  
 ServerName www.example.com  
 ServerAdmin webmaster@localhost  
@@ -18,6 +19,7 @@ DirectoryIndex index.html index.php (Nota: Se debe añadir esta línea)
 ErrorLog ${APACHE_LOG_DIR}/error.log  
 CustomLog ${APACHE_LOG_DIR}/access.log combined  
 </VirtualHost>  
+ ```
 ![image](https://github.com/cristian1203/Actividad13_lamp/assets/151034282/d72e2df0-824e-4e3f-ac9f-a57d9a4ac732)
 ## 5: Reiniciamos servicio apache2
 systemctl restart apache2  
@@ -37,7 +39,22 @@ Creamos en el “documentroot” del sitio web por defecto
  ```  
 Desde el navegador e incluimos la siguiente URL:  
 http://ip_servidor/info.php  
-![image](https://github.com/cristian1203/Actividad13_lamp/assets/151034282/9375a8aa-89dc-47fb-8cd9-822ddd42dee7)
-
+![image](https://github.com/cristian1203/Actividad13_lamp/assets/151034282/9375a8aa-89dc-47fb-8cd9-822ddd42dee7)  
+## 7. Ahora instalaremos Mariadb
+### 1.Actualización repositorios:
+apt update
+### 2.Instalación servidor de base de datos y cliente
+apt install -y mariadb-server mariadb-client
+apt install -y mariadb-server mariadb (alternativo)
+### 3.Acceso a MariaDB desde consola servidor (como root)
+mariadb
+mariadb -u root
+### 4.Cambiar la contraseña de root
+ ```
+MariaDB> ALTER USER ‘root’@’localhost’ identified BY
+'nueva_contraseña';
+MariaDB> flush privileges;
+MariaDB> exit:
+ ```
 
 
