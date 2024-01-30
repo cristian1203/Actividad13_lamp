@@ -35,6 +35,6 @@ Creamos en el “documentroot” del sitio web por defecto
 </html>
 Desde el navegador e incluimos la siguiente URL:
 http://ip_servidor/info.php  
-![image](https://github.com/cristian1203/Actividad13_lamp/assets/151034282/8aa4cdb6-ee0c-46ba-adbe-856fd74c6c2f)
+![image](https://github.com/cristian1203/Actividad13_lamp/assets/151034282/04c7910e-a017-4ee6-92cc-44311976ecea)
 
 
