@@ -24,8 +24,20 @@ systemctl restart apache2
 ![image](https://github.com/cristian1203/Actividad13_lamp/assets/151034282/6438c0e8-e37b-4d7e-91ea-b9836d751b90)
 ## 6.Comprobación de LAMP  
 Creamos en el “documentroot” del sitio web por defecto
-(/var/www/html) una página de prueba: info.php para testear php:
-echo "<?php phpinfo(); ?>" > info.php
+(/var/www/html) una página de prueba:<html>
+<head>
+
+    <title>Actividad 1.3.1</title>
+
+</head>
+
+<body>
+
+    <?php echo "<h1>Actividad 1.3.1: LAMP Sever. Autor: Tu nombre y apellidos</h1>"; ?>   
+
+</body>
+
+</html>
 Desde el navegador e incluimos la siguiente URL:
 http://ip_servidor/info.php  
 ![image](https://github.com/cristian1203/Actividad13_lamp/assets/151034282/317a162f-d222-40ab-905d-e2120f3fc0f5)
