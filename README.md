@@ -45,16 +45,33 @@ http://ip_servidor/info.php
 apt update
 ### 2.Instalación servidor de base de datos y cliente
 apt install -y mariadb-server mariadb-client
-apt install -y mariadb-server mariadb (alternativo)
+apt install -y mariadb-server mariadb (alternativo)  
+![image](https://github.com/cristian1203/Actividad13_lamp/assets/151034282/8c0aa6cb-2aa1-4915-b2d4-cc1a54743f59)
 ### 3.Acceso a MariaDB desde consola servidor (como root)
 mariadb
-mariadb -u root
+mariadb -u root  
+![image](https://github.com/cristian1203/Actividad13_lamp/assets/151034282/d4c4e796-2e19-40d0-809a-d837d0c951ca)
 ### 4.Cambiar la contraseña de root
  ```
-MariaDB> ALTER USER ‘root’@’localhost’ identified BY
-'nueva_contraseña';
+MariaDB> ALTER USER ‘root’@’localhost’ identified BY 'nueva_contraseña';
 MariaDB> flush privileges;
 MariaDB> exit:
  ```
+![image](https://github.com/cristian1203/Actividad13_lamp/assets/151034282/92f5541b-9fcd-40b7-95d4-48c4363fa85f)  
+## 8.Instalación PHPMyAdmin:
+```
+apt install phpmyadmin php-mbstring php-zip php-gd php-json php-curl -y
+```
+### 1.  IMPORTANTE!! Durante el proceso de instalación se debe elegir el servidor web: apache2   
+![image](https://github.com/cristian1203/Actividad13_lamp/assets/151034282/2dd37e25-a448-444f-bd30-cbcb9d8d0d4a)
+### 2. Confirma que desea utilizar dbconfig-common para configurar la base de datos
+### 3. Finalmente se solicitará una contraseña para phpMyadmin, por ejemplo, Cristian214 en mi caso
+### 4. Acceso a PHPMyAdmin: http://ip_host/phpmyadmin/  
+![image](https://github.com/cristian1203/Actividad13_lamp/assets/151034282/fb943538-ce03-4965-94e8-0fb28f8c5134)
+
+
+
+
+
 
 
