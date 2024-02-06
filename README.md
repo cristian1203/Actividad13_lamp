@@ -61,7 +61,7 @@ mariadb -u root
 ![image](https://github.com/cristian1203/Actividad13_lamp/assets/151034282/d4c4e796-2e19-40d0-809a-d837d0c951ca)
 ### 4.Cambiar la contraseña de root
  ```
-MariaDB> ALTER USER ‘root’@’localhost’ identified BY 'nueva_contraseña';
+MariaDB> ALTER USER 'root'@'localhost' identified BY 'nueva_contraseña';
 MariaDB> flush privileges;
 MariaDB> exit:
  ```
