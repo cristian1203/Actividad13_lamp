@@ -3,10 +3,14 @@
 Actualización repositorios: apt update  
 ![image](https://github.com/cristian1203/Actividad13_lamp/assets/151034282/43bc1f56-b522-4cb9-9802-d0fa766c4e7c)
 ## 2.Instalación Apache2:
-apt install apache2 -y  
+```
+sudo apt install apache2 -y
+```
 ![image](https://github.com/cristian1203/Actividad13_lamp/assets/151034282/a490cb2c-8d4b-40af-94c2-d0a2e1920213)
 ## 3.Instalación PHP
-apt install php libapache2-mod-php php-mysql -y  
+```
+apt install php libapache2-mod-php php-mysql -y
+``` 
 ![image](https://github.com/cristian1203/Actividad13_lamp/assets/151034282/e3ea6d15-e908-4f4b-872d-7f97321152cb)
 ## 4.Editamos sitio web por defecto (000-default.conf) en la ruta  /etc/apache2:
 El sitio web (host virtual) quedaría de la siguiente manera:  
@@ -42,10 +46,14 @@ http://ip_servidor/info.php
 ![image](https://github.com/cristian1203/Actividad13_lamp/assets/151034282/9375a8aa-89dc-47fb-8cd9-822ddd42dee7)  
 ## 7. Ahora instalaremos Mariadb
 ### 1.Actualización repositorios:
+```
 apt update
+```
 ### 2.Instalación servidor de base de datos y cliente
+```
 apt install -y mariadb-server mariadb-client
-apt install -y mariadb-server mariadb (alternativo)  
+```
+  
 ![image](https://github.com/cristian1203/Actividad13_lamp/assets/151034282/8c0aa6cb-2aa1-4915-b2d4-cc1a54743f59)
 ### 3.Acceso a MariaDB desde consola servidor (como root)
 mariadb
