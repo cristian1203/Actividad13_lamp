@@ -77,7 +77,7 @@ apt install phpmyadmin php-mbstring php-zip php-gd php-json php-curl -y
 ### 4. Acceso a PHPMyAdmin: http://ip_host/phpmyadmin/  
 ![image](https://github.com/cristian1203/Actividad13_lamp/assets/151034282/fb943538-ce03-4965-94e8-0fb28f8c5134)
 
-##index.php
+## index.php
 ```
 <head>
    <title>Actividad 1.3.1</title>  
